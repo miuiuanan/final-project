@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="kidzplay_footer_copyright" inherit_id="website.layout_footer_copyright" name="Kidzplay Footer Copyright">
+            <xpath expr="//footer/div[@class='container mt16 mb8']" position="replace">
+                <div id="copyrights">
+                    <div class="container clearfix">
+                        <div class="col_half">
+                            &amp;copy; Bản quyền thuộc về <a href="http://www.kidzplay.vn" target="_blank">Kidzplay.vn</a>.
+                        </div>
+                        <div class="col_half col_last tright">
+                            KidzPlay Co.Ltd - Tầng 4, Tòa nhà Tây Hà, 19 Tố Hữu, Hà Nội | Email: chi@kidzplay.vn | Hotline: 0977176404
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,69 @@
+<odoo>
+    <data>
+        <record id="pos_permission_form_view" model="ir.ui.view">
+            <field name="name">pos.permission.form</field>
+            <field name="model">pos.permission.rel</field>
+            <field name="arch" type="xml">
+                <form string="Pos Permission">
+                    <sheet>
+                        <notebook>
+                            <page string="Pos Permission">
+                                <field name="permission_access">
+                                    <tree string="Pos Permission" editable="top">
+                                        <field name="user_id"/>
+                                        <field name="perm_discount"/>
+                                        <field name="perm_price"/>
+                                    </tree>
+                                    <!--<form string="Access Controls">-->
+                                        <!--<group col="4">-->
+                                            <!--<field name="name"/>-->
+                                            <!--<field name="active"/>-->
+                                            <!--<field name="model_id"/>-->
+                                            <!--<newline/>-->
+                                            <!--<field name="perm_read"/>-->
+                                            <!--<field name="perm_write"/>-->
+                                            <!--<field name="perm_create"/>-->
+                                            <!--<field name="perm_unlink"/>-->
+                                        <!--</group>-->
+                                    <!--</form>-->
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="product_pos_category_tree_view" model="ir.ui.view">
+            <field name="name">pos.category.tree</field>
+            <field name="model">pos.permission.rel</field>
+            <field name="field_parent" eval="False"/>
+            <field name="arch" type="xml">
+                <tree string="Pos Permission" create="false" action="false">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="menu_pos_permission_action" model="ir.actions.act_window">
+            <field name="name">Permission</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">pos.permission.rel</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" eval="False"/>
+        </record>
+
+        <record id="company_form_wifi" model="ir.ui.view">
+            <field name="name">res.company.form.wifi.inherit</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <field name="website" position="after">
+                    <field name="wifi" />
+                    <field name="wifi_pass" />
+                </field>
+            </field>
+        </record>
+
+        <menuitem id="menu_pos_permission" action="menu_pos_permission_action" parent="point_of_sale.menu_point_config_product" sequence="20" />
+    </data>
+</odoo>

@@ -1,0 +1,5 @@
+<odoo>
+  <data>
+    <menuitem name="Membership" id="menu_top" web_icon="membership,static/description/icon.png"/>
+  </data>
+</odoo>

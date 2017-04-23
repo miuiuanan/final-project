@@ -1,0 +1,49 @@
+<odoo>
+  <data>
+    <record model="ir.actions.act_window" id="action_membership_members">
+      <field name="name">Members</field>
+      <field name="res_model">res.partner</field>
+      <field name="domain">[('membership_status_rel', '!=', '')]</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Click to add a new Member
+        </p>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_membership_partner">
+      <field name="name">Membership</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_form"/>
+      <field name="arch" type="xml">
+        <notebook position="inside">
+          <page name='membership' string="Membership">
+            <group>
+              <group string="Status">
+                <field name="membership_status_rel" string="Membership status"/>
+              </group>
+              <group>
+              </group>
+              <group string="Type">
+                <field name="membership_type_rel" string="Membership type"/>
+                <field name="membership_discount_rel" string="Discount"/>
+              </group>
+              <group string="Date">
+                <field name="membership_start_rel" string="From"/>
+                <field name="membership_end_rel" string="To"/>
+              </group>
+            </group>
+          </page>
+        </notebook>
+        <xpath expr="//group[last()]" position="inside">
+            <group>
+                <field name="membership_dob" string="Children Birthday"/>
+            </group>
+        </xpath>
+      </field>
+    </record>
+
+    <menuitem name="Membership" id="menu_top" web_icon="membership,static/description/icon.png"/>
+    <menuitem name="Members" id="menu_membership" parent="menu_top" action="action_membership_members"/>
+  </data>
+</odoo>

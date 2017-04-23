@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="kidzplay_block_post_related" name="Kidzplay Block Post Related" inherit_id="website_blog.blog_post_complete">
+            <xpath expr="//div[@id='blog_content']" position="after">
+                <div class="container">
+                    <div class="separator_blog_post"></div>
+                </div>
+                <section class="s_text_block mt48 mb0">
+                    <div class="container">
+                        <h3 class="text-center" style="text-align: left; ">Bài viết cùng danh mục:</h3>
+                    </div>
+                </section>
+                <section class="s_image_text">
+                    <div class="container">
+                        <div class="row">
+                            <div class="mt32 mb32 col-md-2">
+                                <a href="/blog/kidzplay-3/post/lan-au-tien-be-uoc-lam-cay-thong-noel-tu-oc-vit-tai-kidzplay-16">
+                                    <img class="img img-responsive center-block mb16" src="/web/image/721" alt="Odoo image and text block" data-original-title="" title=""></img>
+                                </a>
+                            </div>
+                            <div class="col-md-3 mt16 mb8">
+                                <h4>
+                                    <a href="/blog/kidzplay-3/post/lan-au-tien-be-uoc-lam-cay-thong-noel-tu-oc-vit-tai-kidzplay-16">Lần đầu tiên bé được làm cây thông Noel từ Ốc vít tại KidzPlay</a>
+                                </h4>
+                                <p>Sự kiện đặc biệt này chỉ có duy nhất tại KidzPlay vào Giáng Sinh 24-25/12...</p>
+                            </div>
+                            <div class="mt32 mb32 col-md-2 col-md-offset-1">
+                                <a href="/blog/kidzplay-3/post/hanh-phuc-tuyet-voi-khi-nhin-ngam-con-vui-choi-hoc-tap-12">
+                                    <img class="img img-responsive center-block mb16" src="/web/image/613" alt="Odoo image and text block" data-original-title="" title=""/>
+                                </a>
+                            </div>
+                            <div class="mb32 col-md-3 mt16">
+                                <h4>
+                                    <a href="/blog/kidzplay-3/post/hanh-phuc-tuyet-voi-khi-nhin-ngam-con-vui-choi-hoc-tap-12">Hạnh phúc tuyệt vời khi nhìn ngắm con vui chơi, học tập</a>
+                                </h4>
+                                <p>Ba mẹ thường rất băn khoăn khi chọn những địa chỉ vui chơi cho trẻ....</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_image_text">
+                    <div class="container">
+                        <div class="row">
+                            <div class="mt32 mb32 col-md-2">
+                                <a href="/blog/kidzplay-3/post/be-vui-choi-bo-ich-nho-su-huong-dan-cua-giao-vien-kidzplay-11">
+                                    <img class="img img-responsive center-block mb16" src="/web/image/611" alt="Odoo image and text block" data-original-title="" title="" />
+                                </a>
+                            </div>
+                            <div class="col-md-3 mt16 mb8">
+                                <h4>
+                                    <a href="/blog/kidzplay-3/post/be-vui-choi-bo-ich-nho-su-huong-dan-cua-giao-vien-kidzplay-11">Bé vui chơi bổ ích nhờ sự hướng dẫn của giáo viên KidzPlay</a>
+                                </h4>
+                                <p>Tại Kidzplay ba mẹ hoàn toàn có thể yên tâm vì bé được chơi các...</p>
+                            </div>
+                            <div class="mt32 mb32 col-md-2 col-md-offset-1">
+                                <a href="/blog/kidzplay-3/post/kidzplay-the-gioi-o-choi-tro-choi-tuyet-voi-cho-tre-13">
+                                    <img class="img img-responsive center-block mb16" src="/web/image/597" alt="Odoo image and text block" data-original-title="" title=""/>
+                                </a>
+                            </div>
+                            <div class="mb32 col-md-3 mt16">
+                                <h4>
+                                    <a href="/blog/kidzplay-3/post/kidzplay-the-gioi-o-choi-tro-choi-tuyet-voi-cho-tre-13">KidzPlay – Thế giới đồ chơi, trò chơi tuyệt vời cho trẻ</a>
+                                </h4>
+                                <p>Ba mẹ nào cũng biết lợi ích của việc vui chơi với sự phát triển...</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </xpath>
+        </template>
+    </data>
+</odoo>
+
